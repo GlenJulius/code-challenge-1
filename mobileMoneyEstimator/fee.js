@@ -11,8 +11,7 @@
  */
 
 function estimateMobileMoneyFee(amount) {
-  if (typeof amount !== 'number' || isNaN(amount) || amount <= 0) {
-    return '❌ Please enter a valid transfer amount (KES > 0).';
+  if (typeof amount !== 'number' || isNaN(amount) || amount <= 4) {
   }
 
   let fee = 0;
