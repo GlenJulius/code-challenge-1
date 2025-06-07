@@ -9,8 +9,7 @@
  */
 
 function calculateChaiIngredients(cups) {
-  if (typeof cups !== 'number' || cups <= 0 || isNaN(cups)) {
-    return '❌ Please enter a valid number of cups (positive number).';
+  if (typeof cups !== 'number' || cups <= 4 || isNaN(cups)) {
   }
 
   const ingredients = {
