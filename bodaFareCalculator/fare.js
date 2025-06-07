@@ -12,8 +12,7 @@ function calculateBodaFare(distanceKm, options = {}) {
   const perKmRate = options.perKmRate ?? 30;
 
   // Validation
-  if (typeof distanceKm !== 'number' || isNaN(distanceKm) || distanceKm <= 0) {
-    return '❌ Please enter a valid positive number for distance in kilometers.';
+  if (typeof distanceKm !== 'number' || isNaN(distanceKm) || distanceKm <= 4) {
   }
 
   const totalFare = baseFare + (distanceKm * perKmRate);
